@@ -6,6 +6,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+:root {
+  --primary-color: #1992d4;
+  --secondary-color: #e2e8f0;
+}
+
 body {
   display: grid;
   grid-template-columns: 20% 80%;
@@ -17,7 +22,7 @@ aside {
   display: grid;
   grid-template-rows: 13% 47% 30% 10%;
   padding: 20px 0;
-  background-color: #1992d4;
+  background-color: var(--primary-color);
 }
 
 h1,
@@ -63,6 +68,108 @@ footer a {
 
 footer a:hover {
   color: khaki;
+}
+
+main {
+  height: inherit;
+  display: grid;
+  grid-template-rows: 25% 65%;
+  background-color: var(--secondary-color);
+}
+
+header {
+  background-color: white;
+  box-shadow: 4px 3px 6px rgba(0, 0, 0, 0.16), 4px 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 10px 37px;
+  display: grid;
+  grid-template-rows: 35% 65%;
+  font-weight: 500;
+}
+
+.search-n-alert-div {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: center;
+}
+
+.search-n-alert-div article {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.search-box {
+  border: none;
+  border-radius: 15px;
+  margin-left: 13px;
+  padding: 0 20px;
+  width: 80%;
+  height: 25px;
+  background-color: var(--secondary-color);
+}
+
+.search-box:focus {
+  outline: none;
+}
+
+.alert-icon {
+  fill: none;
+}
+
+.alert-n-profile-article img {
+  border-radius: 50%;
+  margin: 0 27px;
+  height: 40px;
+}
+
+.alert-n-profile-article span:last-child {
+  font-size: 0.9rem;
+}
+
+.bio-n-social-div {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.avatar-n-username {
+  display: flex;
+  align-items: center;
+}
+
+.bio-n-social-div img {
+  border-radius: 50%;
+  height: 80px;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.username span:first-child {
+  font-size: 0.8rem;
+}
+
+.username span:last-child {
+  font-size: 1.3rem;
+}
+
+.socials-span {
+  justify-self: end;
+  align-self: center;
+}
+
+.socials-span a {
+  border-radius: 20px;
+  margin-left: 20px;
+  padding: 10px 23px;
+  background-color: var(--primary-color);
+  font-size: 0.8rem;
+  color: white;
 }
 
 a {
