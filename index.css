@@ -24,11 +24,6 @@ h1,
 .aside-menu {
   display: grid;
   grid-template-columns: 68px 1fr;
-}
-
-h1 span,
-.aside-menu span {
-  display: flex;
   align-items: center;
   color: white;
 }
