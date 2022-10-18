@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
@@ -119,32 +123,60 @@
             </span>
           </span>
           <span class="socials-span">
-            <a href="https://twitter.com/oluwatobiss">Twitter</a>
-            <a href="https://www.instagram.com/codesweetly/">Instagram</a>
-            <a href="https://web.facebook.com/codesweetly/">Facebook</a>
+            <a href="https://twitter.com/oluwatobiss" class="social-btn"
+              >Twitter</a
+            >
+            <a href="https://www.instagram.com/codesweetly/" class="social-btn"
+              >Instagram</a
+            >
+            <a href="https://web.facebook.com/codesweetly/" class="social-btn"
+              >Facebook</a
+            >
           </span>
         </div>
       </header>
-      <section>
+      <section class="cards-section">
         <article>
           <h2>Articles</h2>
+          <section class="articles-cards-section">
+            <div class="article-card-div">
+              <a href="https://codesweetly.com/how-to-use-git">
+                <h3>Complete Git Tutorial</h3>
+              </a>
+              <p>
+                This Git tutorial will show you the essentials needed to get
+                started with Git. You will learn to install, configure, and
+                clone repos.
+              </p>
+              <div>
+                <input type="checkbox" id="star-article-control" />
+                <label for="star-article-control"
+                  ><span class="material-symbols-outlined article-icon"
+                    >star</span
+                  ></label
+                >
+                <a href="https://codesweetly.com/how-to-use-git"
+                  ><i class="fa-solid fa-globe article-icon"></i
+                ></a>
+                <a href="https://codesweetly.com/category/tools"
+                  ><i class="fa-brands fa-git-alt article-icon"></i
+                ></a>
+              </div>
+            </div>
+          </section>
         </article>
-        <section>
-          <article>
+        <article>
+          <section>
             <h2>Projects</h2>
             <div>
               <section>
                 <h3></h3>
                 <p></p>
-                <div>
-                  <span class="material-icons">star</span>
-                  <span class="material-icons">share</span>
-                  <span><i class="fa-brands fa-js"></i></span>
-                </div>
+                <span><i class="fa-brands fa-js"></i></span>
               </section>
             </div>
-          </article>
-          <article>
+          </section>
+          <section>
             <h2>Resources</h2>
             <div>
               <section>
@@ -155,8 +187,8 @@
                 </div>
               </section>
             </div>
-          </article>
-        </section>
+          </section>
+        </article>
       </section>
     </main>
   </body>
